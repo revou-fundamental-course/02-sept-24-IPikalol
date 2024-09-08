@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #474747;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #ff4757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #ff6b81;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 24px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.box img {
+    max-width: 300px;
+    margin: 10px auto 20px;
+}
+
+.formula {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#luasResult, #kelilingResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+#luasSteps, #kelilingSteps {
+    background-color: #f9f9f9;
+    border-left: 10px solid #007bff;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    align-items: center
+}
+
+@media (max-width: 768px) {
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .calculator {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
