@@ -130,6 +130,19 @@ form button:hover {
     font-size: 14px;
     color: #333;
     align-items: center
+
+}
+#jajargenjang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {

@@ -80,6 +80,31 @@ document.getElementById("kelilingForm").addEventListener("submit", function(even
     `;
 });
 
+document.getElementById('luasJajargenjangForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const alas = parseFloat(document.getElementById('alasJajargenjang').value);
+    const tinggi = parseFloat(document.getElementById('tinggiJajargenjang').value);
+
+    const luas = alas * tinggi;
+
+    document.getElementById('luasJajargenjangResult').textContent = 'Luas Jajargenjang: ' + luas;
+    document.getElementById('luasJajargenjangSteps').textContent = `L = ${alas} * ${tinggi} = ${luas}`;
+});
+
+document.getElementById('kelilingJajargenjangForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const sisiA = parseFloat(document.getElementById('sisiA').value);
+    const sisiB = parseFloat(document.getElementById('sisiB').value);
+
+    const keliling = 2 * (sisiA + sisiB);
+
+    document.getElementById('kelilingJajargenjangResult').textContent = 'Keliling Jajargenjang: ' + keliling;
+    document.getElementById('kelilingJajargenjangSteps').textContent = `K = 2 * (${sisiA} + ${sisiB}) = ${keliling}`;
+});
+
+
 document.getElementById("resetBtn").addEventListener("click", function() {
     document.getElementById("luasForm").reset();
     document.getElementById("kelilingForm").reset();
